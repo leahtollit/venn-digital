@@ -1,5 +1,5 @@
 <template>
-  <header class="globalHeader pos--rel z--max">
+  <header class="globalHeader pos--fix z--max" :class="{ 'globalHeader--collapsed': collapsed }">
     <div class="globalHeader__container container container--medium flex alignI--start justifyC--between">
       <NuxtLink to="/" class="globalHeader__logo"><GlobalLogo class="globalHeader__logoImage" /></NuxtLink>
       <ul class="globalHeader__nav flex">
@@ -42,7 +42,32 @@ export default {
     GlobalLogo,
     CaretIcon,
     SearchIcon
+  },
+  data() {
+    return {
+      collapsed: false
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        this.collapsed = true
+      } else {
+        this.collapsed = false
+      }
+    })
+  },
+  methods: {
+    scrollToElement(element) {
+      const offset = document.querySelector(element).offsetTop
+      const headerHeight = document.querySelector('.globalHeader').clientHeight
+
+      window.scrollTo({
+        top: offset - headerHeight,
+        behavior: 'smooth'
+      })
+    }
+  }
 }
 </script>
 
@@ -51,6 +76,16 @@ export default {
   padding: 46px 0 0;
   margin: 0;
   background: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: padding 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+
+  &--collapsed {
+    padding: 23px 00;
+    background: $greenDark;
+  }
+
 
   &__logoImage {
     width: 121.9px;

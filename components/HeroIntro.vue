@@ -23,7 +23,6 @@ export default {
 
 <style lang="scss">
 .heroIntro {
-	margin-top: -86px;
 	width: 100%;
 	height: 100vh;
 	background: url('static/images/hero-image.jpg');

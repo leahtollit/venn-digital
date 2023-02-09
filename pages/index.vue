@@ -2,6 +2,7 @@
   <main class="theContent">
     <HeroIntro />
     <TextContent />
+    <CenteredCta id="contact"/>
   </main>
 </template>
 

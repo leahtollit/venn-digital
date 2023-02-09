@@ -110,28 +110,39 @@
           </div>
         </div>
       </div>
+
+      <!-- email col -->
+      <div class="globalFooter__emailHolder">
+        <p class="globalFooter__heading fs--16 fc--white ff--inter">Email Newsletter</p>
+        <p class="globalFooter__text fs--11 fc--white ff--inter fw--500">Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In </p>
+        <div class="globalFooter__inputHolder flex">
+          <input type="text" id="email" name="email" placeholder="Email Address" class="globalFooter__input fs--16 ff--inter fc--white">
+          <button class="globalFooter__submitBtn">
+          <IconEmail class="globalFooter__icon globalFooter__icon--email" />
+          </button>
+        </div>
+      </div>
     </div>
 
 
 
 
-    <div class="globalFooter__credits flex justifyC--between alignI--center">
-    <p class="globalFooter__copyright fs--12 ff--inter fw--500 fc--white">Copyright Venn</p>
-    <div class="globalFooter__infoList flex">
+    <div class="globalFooter__credits flex pos--rel justifyC--between alignI--center">
+      <p class="globalFooter__copyright fs--12 ff--inter fw--500 fc--white">Copyright Venn</p>
+      <div class="globalFooter__infoList flex">
+        <a class="globalFooter__link" href="" target="_blank">
+          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Privacy Policy</p>
+        </a>
+        <a class="globalFooter__link" href="" target="_blank">
+          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Slavery &amp; Human Trafficking Statement</p>
+        </a>
+        <a class="globalFooter__link" href="" target="_blank">
+          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Terms &amp; Conditions</p>
+        </a>
+      </div>
       <a class="globalFooter__link" href="" target="_blank">
-        <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Privacy Policy</p>
+        <p class="globalFooter__credit fs--12 ff--inter fw--500 fc--white">Site by Venn</p>
       </a>
-      <a class="globalFooter__link" href="" target="_blank">
-        <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Slavery &amp; Human Trafficking Statement</p>
-      </a>
-      <a class="globalFooter__link" href="" target="_blank">
-        <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Terms &amp; Conditions</p>
-      </a>
-    </div>
-    <a class="globalFooter__link" href="" target="_blank">
-      <p class="globalFooter__credit fs--12 ff--inter fw--500 fc--white">Site by Venn</p>
-    </a>
-
     </div>
   </footer>
 </template>
@@ -141,6 +152,8 @@ import IconFacebook from '~/assets/svgs/socials/facebook.svg?inline'
 import IconTwitter from '~/assets/svgs/socials/twitter.svg?inline'
 import IconLinkedin from '~/assets/svgs/socials/linkedin.svg?inline'
 import IconInstagram from '~/assets/svgs/socials/instagram.svg?inline'
+import IconEmail from '~/assets/svgs/socials/envelope-solid.svg?inline'
+
 
 export default {
   name: 'GlobalFooter',
@@ -148,7 +161,8 @@ export default {
     IconLinkedin,
     IconTwitter,
     IconFacebook, 
-    IconInstagram
+    IconInstagram,
+    IconEmail
   }
 }
 </script>
@@ -156,11 +170,12 @@ export default {
 <style lang="scss">
 .globalFooter {
   padding: 69px 0 0;
-  background: var(--green);
+  background: var(--greenDark);
   width: 100%;
 
   &__container {
-    padding: 0 0 93px;
+    padding: 0 165px 93px;
+    max-width: 1110px;
   }
 
   &__heading {
@@ -178,6 +193,15 @@ export default {
 
   &__navHolder {
     flex-direction: row;
+    max-width: 335px;
+    width: 100%;
+  }
+
+  &__text {
+    max-width: 255px;
+    width: 100%;
+    opacity: 0.5;
+    margin-bottom: 21px;
   }
   
   &__contactRow {
@@ -208,11 +232,16 @@ export default {
 
   &__icon {
     fill: $white;
+
+    &--email {
+      fill: $green;
+      transition: fill 0.3s ease;
+    }
   }
 
   &__credits {
     background: $greyDarker;
-    padding: 21px 0 22px;
+    padding: 21px 165px 22px;
     width: 100%;
   }
 
@@ -238,6 +267,38 @@ export default {
 
   &__copyright, &__credit, &__linkText {
     line-height: 24px;
+  }
+
+  &__inputHolder {
+    max-width: 255px;
+  }
+
+  &__submitBtn {
+    background: $white;
+    border: none;
+    padding: 18px;
+    height: 50px;
+    width: 63px;
+    border: 1px solid $white;
+    border-left-style: none;
+    transition: background 0.3s ease;
+
+    &:hover {
+    background: $green;
+    cursor: pointer;
+
+      .globalFooter__icon--email {
+        fill: $white;
+      }
+    }
+  }
+
+  &__input {
+    border: none;
+    background: $green;
+    max-width: 192px;
+    border: 1px solid $white;
+    padding: 14px 25px 15px;
   }
 }
 </style>

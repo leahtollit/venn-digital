@@ -62,13 +62,43 @@ export default {
 
 <style lang="scss">
 .baseBtn {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 100%;
+    background: $white;
+    transform: translateY(100%);
+    transition: transform .3s ease;
+    z-index: 0;
+  }
   // button styles
   &--white {
     border: 2px solid $white;
     padding: 14px 59px;
 
+    &:after {
+      background: $white;
+    }
+
+
     .baseBtn__label {
       color: $white;
+    }
+
+    &:hover {
+      &:after {
+        transform: translateY(0)
+      }
+
+      .baseBtn__label {
+        color: $green;
+      }
     }
   }
 
@@ -79,7 +109,24 @@ export default {
     .baseBtn__label {
       color: $green;
     }
+
+    &:after {
+      background: $green;
+    }
+
+    &:hover {
+      &:after {
+        transform: translateY(0)
+      }
+
+      .baseBtn__label {
+        color: $white;
+      }
+    }
+
   }
+
+
 
   &--btn:hover,
   &__parentLink:hover .baseBtn--btn {
@@ -99,6 +146,9 @@ export default {
 
   &__label {
     line-height: 24px;
+    transition: color 0.3s ease;
+    z-index: 2;
+    position: relative;
   }
 }
 </style>
