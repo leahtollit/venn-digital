@@ -97,7 +97,7 @@ export default {
       }
 
       .baseBtn__label {
-        color: $green;
+        color: $greenDark;
       }
     }
   }
@@ -107,7 +107,7 @@ export default {
     padding: 14px 59px;
 
     .baseBtn__label {
-      color: $green;
+      color: $greenDark;
     }
 
     &:after {

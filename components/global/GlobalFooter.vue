@@ -1,6 +1,6 @@
 <template>
   <footer class="globalFooter pos--rel">
-    <div class="globalFooter__container container flex">
+    <div class="globalFooter__container flex">
     <!-- contact col -->
       <div class="globalFooter__contact flex flex--dir-c">
         <p class="globalFooter__heading fs--16 fc--white ff--inter">Contact Us</p>

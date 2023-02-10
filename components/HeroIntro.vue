@@ -1,16 +1,16 @@
 <template>
   <Section class="heroIntro ">
-		<div class="heroIntro__container container pos--rel flex flex--dir-c alignI--start">
+		<div class="heroIntro__container container container--medium pos--rel flex flex--dir-c alignI--start">
 			<div class="heroIntro__contentHolder pos--rel flex justifyC--start flex--dir-c">
 				<h1 class="heroIntro__header fc--white fs--40">All the answers under one roof</h1>
 				<p class="heroIntro__text fc--white fs--24">IT and Tech Recruitment for everything from start ups to large enterprises</p>
 			</div>
 			<BaseBtn class="baseBtn--green">Read More </BaseBtn>
-		</div>
-		<div class="heroIntro__nav flex flex--dir-c pos--abs y--center ">
-			<div class="heroIntro__point"></div>
-			<div class="heroIntro__point"></div>
-			<div class="heroIntro__point"></div>
+			<div class="heroIntro__nav flex flex--dir-c pos--abs y--center ">
+				<div class="heroIntro__point"></div>
+				<div class="heroIntro__point"></div>
+				<div class="heroIntro__point"></div>
+			</div>
 		</div>
   </section>
 </template>
@@ -48,7 +48,7 @@ export default {
 	}
 
 	&__nav {
-		right: 0;
+		right: 7%;
 	}
 	&__point {
 		width: 15px;
@@ -69,5 +69,16 @@ export default {
 		}
 	}
 	
+}
+
+//----------------------------------------//
+// 1080
+@include breakpoint(xl) {
+  .heroIntro {
+
+		&__nav {
+			right: 4%;
+		}
+	}
 }
 </style>

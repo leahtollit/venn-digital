@@ -2,6 +2,7 @@
   <main class="theContent">
     <HeroIntro />
     <TextContent />
+    <NewsGrid id="news" />
     <CenteredCta id="contact"/>
   </main>
 </template>
