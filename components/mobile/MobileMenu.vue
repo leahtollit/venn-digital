@@ -52,13 +52,13 @@ export default {
 @include breakpoint(l) {
   .mobileMenu {
     display: block;
-    background: var(--black);
+    background: var(--white);
     padding: 40px;
     visibility: hidden;
     transition: visibility 0.2s ease, opacity 0.2s ease;
 
     &__navLabel {
-      color: var(--white);
+      color: var(--greenDark);
     }
 
     //

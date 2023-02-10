@@ -1,40 +1,40 @@
 <template>
   <footer class="globalFooter pos--rel">
-    <div class="globalFooter__container flex">
+    <div class="globalFooter__container container container--medium flex justifyC--between">
     <!-- contact col -->
       <div class="globalFooter__contact flex flex--dir-c">
         <p class="globalFooter__heading fs--16 fc--white ff--inter">Contact Us</p>
         <div class="globalFooter__contactRow flex justifyC--between">
-          <p class="globalFooter__subheading fs--14 fc--white ff--inter">Telephone</p>
-          <a class="globalFooter__Contactlink fs--14 fc--white ff--inter" href="">+44 123 456 7890</a>
+          <a class="globalFooter__subheading fs--14 fc--white ff--inter" href="tel:01625788125">Telephone</a>
+          <a class="globalFooter__contactlink fs--14 fc--white ff--inter" href="mailto:mailto:email@example.com">+44 123 456 7890</a>
         </div>
         <div class="globalFooter__contactRow flex justifyC--between">
           <p class="globalFooter__subheading fs--14 fc--white ff--inter">Email</p>
-          <a class="globalFooter__Contactlink fs--14 fc--white ff--inter" href="" target="_blank">enquires@domain.com</a>
+          <a class="globalFooter__contactlink fs--14 fc--white ff--inter" href="" target="_blank">enquires@domain.com</a>
         </div>
         <div class="globalFooter__connectRow flex flex--dir-c">
           <p class="globalFooter__heading fs--16 fc--white ff--inter">Connect with Us</p>
           <div class="globalFooter__socials flex alignI--center">
             <a
-              href=""
+              href="https://www.linkedin.com/company/venn-digital"
               class="globalFooter__socialItem"
               target="_blank">
               <IconLinkedin class="globalFooter__icon globalFooter__icon--linkedin" />
             </a>
             <a
-              href=""
+              href="https://twitter.com/venndigital"
               class="globalFooter__socialItem"
               target="_blank">
               <IconTwitter class="globalFooter__icon globalFooter__icon--twitter" />
             </a>
             <a
-              href=""
+              href="https://www.instagram.com/lifeatvenn/"
               class="globalFooter__socialItem"
               target="_blank">
               <IconInstagram class="globalFooter__icon globalFooter__icon--instagram" />
             </a>
             <a
-              href=""
+              href="https://www.facebook.com/venndigital"
               class="globalFooter__socialItem"
               target="_blank">
               <IconFacebook class="globalFooter__icon globalFooter__icon--facebook" />
@@ -44,7 +44,7 @@
       </div>
       <!-- quick links -->
       <div class="globalFooter__navHolder flex">
-        <div class="globalFooter__nav">
+        <div class="globalFooter__nav flex flex--dir-c">
           <p class="globalFooter__heading fs--16 fc--white ff--inter">Quick Links</p>
           <div class="globalFooter__navLinks flex flex--dir-c">
             <a
@@ -78,7 +78,8 @@
               target="_blank">Job Search
             </a>
           </div>
-          <div class="globalFooter__nav">
+        </div>
+          <div class="globalFooter__nav flex flex--dir-c">
           <p class="globalFooter__heading fs--16 fc--white ff--inter">Sectors</p>
           <div class="globalFooter__navLinks flex flex--dir-c">
             <a
@@ -106,7 +107,6 @@
               class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
               target="_blank">Life Sciences
             </a>
-            </div>
           </div>
         </div>
       </div>
@@ -127,7 +127,8 @@
 
 
 
-    <div class="globalFooter__credits flex pos--rel justifyC--between alignI--center">
+    <div class="globalFooter__credits pos--rel">
+      <div class="globalFooter__creditsHolder container container--medium pos--rel flex justifyC--between alignI--center">
       <p class="globalFooter__copyright fs--12 ff--inter fw--500 fc--white">Copyright Venn</p>
       <div class="globalFooter__infoList flex">
         <a class="globalFooter__link" href="" target="_blank">
@@ -140,9 +141,10 @@
           <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Terms &amp; Conditions</p>
         </a>
       </div>
-      <a class="globalFooter__link" href="" target="_blank">
+      <a class="globalFooter__link" href="https://www.venndigital.co.uk/" target="_blank">
         <p class="globalFooter__credit fs--12 ff--inter fw--500 fc--white">Site by Venn</p>
       </a>
+    </div>
     </div>
   </footer>
 </template>
@@ -174,8 +176,30 @@ export default {
   width: 100%;
 
   &__container {
-    padding: 0 165px 93px;
-    max-width: 1110px;
+    padding-bottom: 93px;
+    // max-width: 1110px;
+  }
+
+  &__contactLink {
+    position: relative;
+
+      &::after {
+      position: absolute;
+      content: "";
+      background: $white;
+      width: 100%;
+      height: 1px;
+      bottom: -0.1875rem;
+      left: 0;
+      transform: scaleX(0);
+      transition: transform .7s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
   }
 
   &__heading {
@@ -193,8 +217,12 @@ export default {
 
   &__navHolder {
     flex-direction: row;
-    max-width: 335px;
-    width: 100%;
+  }
+
+  &__nav {
+    &:nth-child(1) {
+      margin-right: 98px;
+    }
   }
 
   &__text {
@@ -205,12 +233,13 @@ export default {
   }
   
   &__contactRow {
-  margin-bottom: 11px;
+    margin-bottom: 11px;
 
-    &:nth-last-child(1){
+    &:nth-child(3) {
       margin-bottom: 0;
     }
   }
+  
 
   &__socialItem {
     margin-right: 23px; 
@@ -232,16 +261,22 @@ export default {
 
   &__icon {
     fill: $white;
+    transition: transform 0.3s ease;
 
     &--email {
       fill: $green;
-      transition: fill 0.3s ease;
+      transition: fill 0.3s ease, transform 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
     }
   }
 
   &__credits {
     background: $greyDarker;
-    padding: 21px 165px 22px;
+    padding-top: 21px;
+    padding-bottom: 22px;
     width: 100%;
   }
 
@@ -295,10 +330,82 @@ export default {
 
   &__input {
     border: none;
-    background: $green;
+    background: $greenDark;
     max-width: 192px;
-    border: 1px solid $white;
+    height: 50px;
+    border: 2px solid $white;
     padding: 14px 25px 15px;
+    z-index: 1;
+
+    &::placeholder {
+      opacity: 1;
+    }
   }
 }
+
+
+//----------------------------------------//
+// 750
+@include breakpoint(m) {
+  .globalFooter { 
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__connectRow, &__navHolder {
+      margin-bottom: 46px;
+    }
+  }
+}
+//----------------------------------------//
+// 600
+@include breakpoint(s) {
+  .globalFooter {
+    padding: 34px 0 0;
+
+
+    &__container {
+      padding-bottom: 93px;
+    }
+
+    &__credits {
+      padding: 21px 24px 22px;
+    }
+  }
+}
+
+//----------------------------------------//
+// 500
+@include breakpoint(xs) {
+  .globalFooter {
+    &__nav {
+      &:nth-child(1) {
+        margin-right: 49px;
+      }
+    }
+
+    &__connectRow, &__navHolder {
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
+  }
+} 
+
+//----------------------------------------//
+// 400
+@include breakpoint(xxs) {
+  .globalFooter {
+    &__nav {
+      width: 100%;
+      &:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
+    }
+  }
+} 
 </style>

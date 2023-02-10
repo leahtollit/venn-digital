@@ -39,7 +39,7 @@ export default {
     width: 72px;
     height: 72px;
     display: flex;
-    background: var(--white);
+    background: var(--green);
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     transition: top 0.2s ease;
 
@@ -47,7 +47,7 @@ export default {
       width: 32px;
       height: 2px;
       display: block;
-      background: var(--black);
+      background: var(--white);
       transition: height 0.1s 0.3s ease, width 0.2s 0.1s ease, background 0.2s ease;
 
       &::before,
@@ -55,7 +55,7 @@ export default {
         content: '';
         width: 32px;
         height: 2px;
-        background: var(--black);
+        background: var(--white);
         display: block;
         position: relative;
         top: -8px;

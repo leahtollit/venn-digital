@@ -1,6 +1,7 @@
 <template>
   <main class="theContent">
     <HeroIntro />
+    <StatText id="statistic" />
     <TextContent />
     <NewsGrid id="news" />
     <CenteredCta id="contact"/>

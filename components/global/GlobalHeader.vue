@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss">
 .globalHeader {
-  padding: 46px 0 0;
+  padding: 46px 0;
   margin: 0;
   background: none;
   top: 0;
@@ -82,7 +82,7 @@ export default {
   transition: padding 0.3s ease, opacity 0.3s ease, background 0.3s ease;
 
   &--collapsed {
-    padding: 23px 00;
+    padding: 23px 0;
     background: $greenDark;
   }
 
@@ -158,6 +158,7 @@ export default {
 // 600
 @include breakpoint(s) {
   .globalHeader {
+
 
     &__nav {
       display: none;

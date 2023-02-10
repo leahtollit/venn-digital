@@ -1,6 +1,6 @@
 <template>
   <Section class="centeredCta pos--rel">
-		<div class="centeredCta__container pos--rel flex flex--dir-c alignI--center">
+		<div class="centeredCta__container container pos--rel flex flex--dir-c alignI--center">
 			<div class="centeredCta__contentHolder pos--rel flex justifyC--start flex--dir-c z--1">
 				<h1 class="centeredCta__header fc--white fs--24 ta--center">Have a question? We want to hear from you! </h1>
 				<p class="centeredCta__text fc--white fs--24 ta--center">Curabitur laoreet egestas!</p>
@@ -45,7 +45,23 @@ export default {
 		width: 100%;
 		max-width: 783.67px;
 	}
+}
 
+//----------------------------------------//
+// 600
+@include breakpoint(s) {
+  .centeredCta {
+		&__header, &__text  {
+			margin-bottom: 15px;
+		}
 
+		&__header {
+			font-size: 22px;
+		}
+
+		&__text {
+			font-size: 18px;
+		}
+	}
 }
 </style>
