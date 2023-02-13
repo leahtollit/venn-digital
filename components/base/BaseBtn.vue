@@ -64,6 +64,7 @@ export default {
 .baseBtn {
   position: relative;
   overflow: hidden;
+  display: inline-block;
 
   &:after {
     content: "";

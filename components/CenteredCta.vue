@@ -5,7 +5,7 @@
 				<h1 class="centeredCta__header fc--white fs--24 ta--center">Have a question? We want to hear from you! </h1>
 				<p class="centeredCta__text fc--white fs--24 ta--center">Curabitur laoreet egestas!</p>
 			</div>
-				<BaseBtn class="baseBtn--white z--1">Get in Touch</BaseBtn>
+				<BaseBtn class="baseBtn--white z--1" external :link="'mailto:mailto:email@example.com'">Get in Touch</BaseBtn>
 		</div>
 		<img class="centeredCta__bg pos--abs" src="/images/green-bg-shape.png" alt="">
   </section>

@@ -18,8 +18,10 @@ export default {
 
 <style lang="scss">
 .textContent {
-background: red;
+	background: red;
 	padding: 107px 0;
+	border-top: 1px solid $green;
+
 
 	&__header {
 		max-width: 634px;

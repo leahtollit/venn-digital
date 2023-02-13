@@ -5,12 +5,12 @@
       <div class="globalFooter__contact flex flex--dir-c">
         <p class="globalFooter__heading fs--16 fc--white ff--inter">Contact Us</p>
         <div class="globalFooter__contactRow flex justifyC--between">
-          <a class="globalFooter__subheading fs--14 fc--white ff--inter" href="tel:01625788125">Telephone</a>
-          <a class="globalFooter__contactlink fs--14 fc--white ff--inter" href="mailto:mailto:email@example.com">+44 123 456 7890</a>
+          <p class="globalFooter__subheading fs--14 fc--white ff--inter" >Telephone</p>
+          <a class="globalFooter__contactlink fs--14 fc--white ff--inter" href="tel:01625788125">+44 123 456 7890</a>
         </div>
         <div class="globalFooter__contactRow flex justifyC--between">
           <p class="globalFooter__subheading fs--14 fc--white ff--inter">Email</p>
-          <a class="globalFooter__contactlink fs--14 fc--white ff--inter" href="" target="_blank">enquires@domain.com</a>
+          <a class="globalFooter__contactlink fs--14 fc--white ff--inter" href="mailto:mailto:email@example.com" target="_blank">enquires@domain.com</a>
         </div>
         <div class="globalFooter__connectRow flex flex--dir-c">
           <p class="globalFooter__heading fs--16 fc--white ff--inter">Connect with Us</p>

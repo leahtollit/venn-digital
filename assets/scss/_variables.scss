@@ -6,7 +6,7 @@ $white: #fff;
 $greyDarker: #272727;
 $greyDark: #424247;
 $grey: #424247;
-$greyLight: #8e8e91;
+$greyLight: #5F6368;
 $greyLighter: #d4d4d8;
 $greyLightest: #e2e2e6;
 
@@ -63,7 +63,9 @@ $success: $green;
 
 $fontcolors: (
   'black': var(--black),
-  'white': $white
+  'white': $white,
+  'greyLight': $greyLight,
+  'green': $green
 );
 
 $bgcolors: (

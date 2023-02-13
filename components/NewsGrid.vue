@@ -2,8 +2,8 @@
   <Section class="newsGrid">
 		<div class="newsGrid__container container container--medium pos--rel flex">
 			<div class="newsGrid__headerHolder flex justifyC--between alignI--center">
-				<h2 class="newsGrid__header fs--40 fc--black fw--600">Latest News &amp; Articles</h2>
-				<BaseBtn class="baseBtn baseBtn--green">All News</BaseBtn>
+				<h3 class="newsGrid__header fs--40 fc--black fw--600">Latest News &amp; Articles</h3>
+				<BaseBtn class="baseBtn baseBtn--green" :to="'/'">All News</BaseBtn>
 			</div>
 			<div class="newsGrid__grid grid">
 				<div v-for="(el, i) in items" :key="el + i" class="newsGrid__itemHolder" :class="'newsGrid__itemHolder--' + i">
@@ -18,7 +18,7 @@
 									{{ el.text }}
 								</p>
 							</div>
-							<BaseBtn class="baseBtn baseBtn--green">{{ el.buttonLabel }} </BaseBtn>
+							<BaseBtn class="baseBtn baseBtn--green" :link="el.buttonLink">{{ el.buttonLabel }} </BaseBtn>
 						</div>
           </div>
 				</div>
