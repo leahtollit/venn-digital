@@ -22,6 +22,7 @@ export default {
   background: url('static/images/jellyfish.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 
 
   &__headerHolder {

@@ -34,8 +34,8 @@ export default {
 @include breakpoint(l) {
   .mobileBtn {
     display: flex;
-    bottom: 40px;
-    right: 40px;
+    bottom: 32px;
+    right: 32px;
     width: 72px;
     height: 72px;
     display: flex;
@@ -88,6 +88,15 @@ export default {
         transform: rotate(45deg);
       }
     }
+  }
+}
+
+//----------------------------------------//
+// 500
+@include breakpoint(s) {
+  .mobileBtn {
+    right: 24px;
+    bottom: 24px;
   }
 }
 </style>

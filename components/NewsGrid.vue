@@ -128,7 +128,7 @@ export default {
 		height: 100%;
 
 		&--0 {
-			padding-bottom: 72%;
+			padding-bottom:  101%;;
 		}
 
 		&--3 {

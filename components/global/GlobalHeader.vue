@@ -155,8 +155,8 @@ export default {
 
 
 //----------------------------------------//
-// 600
-@include breakpoint(s) {
+// 960
+@include breakpoint(l) {
   .globalHeader {
 
 

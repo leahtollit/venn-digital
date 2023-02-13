@@ -1,6 +1,8 @@
 <template>
   <main class="theContent">
     <HeroIntro />
+    <SectorContent id="industry" />
+    <TextImageLeft id="public" />
     <StatText id="statistic" />
     <ClientCarousel id="clients" />
     <VacancyCarousel id="jobs" />
