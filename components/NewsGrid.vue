@@ -194,7 +194,6 @@ export default {
 
 		&__header {
 			font-size: 32px;
-			margin-bottom: 18px;
 		}
 		&__grid {
 			grid-template-columns: auto;

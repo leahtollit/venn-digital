@@ -145,9 +145,16 @@
         },
         loop: true,
       breakpoints: {
+        '(max-width: 1400px)': {
+          slides: {
+            perView: 3,
+            spacing: 29
+        
+          }
+        },
         '(max-width: 1200px)': {
           slides: {
-            perView: 2,
+            perView: 3,
             spacing: 29
         
           }
@@ -159,7 +166,7 @@
         
           }
         },
-        '(max-width: 500px)': {
+        '(max-width: 600px)': {
           slides: {
             perView: 1,
             spacing: 15
@@ -208,7 +215,6 @@
     &__btns {
       margin-top: 30px;
       // right: 0;
-      max-width: 1400px;
     }
 
     &__btn {
@@ -289,13 +295,18 @@
   }
 
   //----------------------------------------//
-// 600
-@include breakpoint(s) {
+// 750
+@include breakpoint(m) {
   .sliderJobs {
+    width: 100%;
   
 
     &__slide {
-      width: 100%;
+			height: 100%;
+    }
+
+    &__btn--prev {
+      margin-right: 34px;
     }
   }
 }

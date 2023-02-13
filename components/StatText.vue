@@ -171,6 +171,10 @@ export default {
 			flex-direction: column;
 		}
 
+		&__contentHolder {
+			margin-bottom: 28px;
+		}
+
 		&__contentHolder, &__holder {
 			width: 100%;
 		}

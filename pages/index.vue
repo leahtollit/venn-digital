@@ -2,6 +2,7 @@
   <main class="theContent">
     <HeroIntro />
     <StatText id="statistic" />
+    <ClientCarousel id="clients" />
     <VacancyCarousel id="jobs" />
     <TextContent />
     <NewsGrid id="news" />

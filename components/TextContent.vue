@@ -59,4 +59,20 @@ export default {
 	}
 	
 }
+
+  //----------------------------------------//
+// 600
+@include breakpoint(s) {
+  .textContent {
+		padding: 53px 0;
+
+		&__header {
+			font-size: 32px;
+		}
+
+		&__text {
+			font-size: 18px;
+		}
+	}
+}
 </style>
