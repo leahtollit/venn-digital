@@ -17,10 +17,10 @@ export default {
 
 <style lang="scss">
 .clientCarousel {
-	// background: url('static/images/hero-image.jpg');
-	background: $green;
+	background: url('static/images/geometric-bg.jpg');
+	background-position: center ;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;	
 	padding: 111px 0 110px;
 
 	&__headerHolder {

@@ -18,7 +18,10 @@ export default {
 
 <style lang="scss">
 .textContent {
-	background: red;
+	background: url('static/images/social-group.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	padding: 107px 0;
 	border-top: 1px solid $green;
 

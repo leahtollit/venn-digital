@@ -6,15 +6,15 @@
             <p class="sliderJobs__role fc--white fs--18 ff--montserrat fw--500 lh--120"> {{ slide.role }}</p>
         </div>
         <div class="sliderJobs__body flex flex--dir-c">
-          <div class="sliderJobs__row flex">
+          <div class="sliderJobs__row sliderJobs__row--salary flex alignI--center">
             <SalaryIcon class="sliderJobs__icon sliderJobs__icon--salary"/>
             <p class="sliderJobs__salary fs--14 fc--greyLight ff--inter fw--700 lh--170"> {{ slide.salary }} </p>
           </div>
-          <div class="sliderJobs__row flex">
+          <div class="sliderJobs__row sliderJobs__row--location flex alignI--center">
             <LocationIcon class="sliderJobs__icon sliderJobs__icon--location"/>
             <p class="sliderJobs__location fs--14 fc--greyLight ff--inter fw--700 lh--170"> {{ slide.location }} </p>
           </div>
-          <div class="sliderJobs__row flex">
+          <div class="sliderJobs__row sliderJobs__row--type flex alignI--center">
             <ClockIcon class="sliderJobs__icon sliderJobs__icon--clock"/>
             <p class="sliderJobs__type fs--14 fc--greyLight ff--inter fw--700 lh--170"> {{ slide.type }} </p>
           </div>
@@ -201,7 +201,9 @@
       width: 100%;
     	max-width: 100vw;
 			overflow: visible;
+      height: 100%;
     }
+
   
     &__slide {
       overflow: hidden;
@@ -214,6 +216,9 @@
 
     &__btns {
       margin-top: 30px;
+      max-width: 1275px;
+      padding: 0 88px;
+      padding: 0 175px;
       // right: 0;
     }
 
@@ -246,18 +251,20 @@
 			width: 100%;
 		}
 
-		&__salary {
-			margin-bottom: 17.6px;
-		}
+    &__row {
+      &--salary {
+			  margin-bottom: 17.6px;
+		  }
 
-		&__location {
-			margin-bottom: 18px;
-		}
+      &--location {
+        margin-bottom: 18px;
+      }
 
-		&__type {
-			margin-bottom: 20.4px;
-		}
-
+      &--type {
+        margin-bottom: 20.4px;
+      }
+    
+    }
 		&__description {
 			margin-bottom: 18.4px;
 			line-height: 24px;
@@ -294,11 +301,37 @@
     }
   }
 
-  //----------------------------------------//
+//----------------------------------------//
+// 1400
+@include breakpoint(xxxl) {
+  .sliderJobs {
+
+    &__btns {
+      padding: 0 88px;
+    }
+  }
+}
+
+//----------------------------------------//
+// 960
+@include breakpoint(l) {
+  .sliderJobs {
+
+    &__btns {
+      padding: 0 67px;
+    }
+  }
+}
+
+//----------------------------------------//
 // 750
 @include breakpoint(m) {
   .sliderJobs {
     width: 100%;
+
+    &__btns {
+      padding: 0;
+    }
   
 
     &__slide {

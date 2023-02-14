@@ -76,6 +76,16 @@ export default {
 @include breakpoint(xl) {
   .heroIntro {
 
+		&__container {
+			padding-top: 144px;
+			padding-bottom: 100px;
+			justify-content: end;
+		}
+
+		&__header {
+			font-size: 38px;
+		}
+
 		&__nav {
 			right: 4%;
 		}

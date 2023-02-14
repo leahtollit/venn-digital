@@ -12,7 +12,7 @@
 							<img class="sectorContent__image pos--abs" :src="`/images/${sector.image}.jpg`" alt="" />
 						</div>
 					</a>
-          <div class="sectorContent__overlay">
+          <div class="sectorContent__overlay" :class="'sectorContent__overlay--' + i">
 						<h3 class="sectorContent__name fc--white fs--24 fw--600 ff--montserrat lh--120">{{ sector.name }}</h3>
 						<a :href="sector.link" target="_blank" class="sectorContent__link flex alignI--center">
             	<p class="sectorContent__label fc--green fs--16 ff--montserrat lh--120">{{ sector.linkLabel }}</p>
@@ -109,9 +109,28 @@ export default {
 
 	&__overlay {
 		width: 100%;
-		background-color: $greyDark;
+		background-color: $greyDarker;
+		background-position: bottom;
+		background-repeat: none;
+		background-blend-mode: multiply;
 		padding: 22px 21px 20px;
-		opacity: 0.8;
+		left: 0;
+		bottom: 0;
+		position: absolute;
+
+		&--0 {
+			background-image: url('static/images/information-technology.jpg');
+		}
+
+		&--1 {
+			background-image: url('static/images/digital-media.jpg');
+		}
+		&--2 {
+			background-image: url('static/images/it-security.jpg');
+		}
+		&--3 {
+			background-image: url('static/images/legal-it.jpg');
+		}
 	}
 
 	&__text {
@@ -140,7 +159,7 @@ export default {
 		margin-right: 30px;
 		margin-bottom: 44px;
 
-		&:nth-child(2), &:nth-child(4) {
+		&:nth-child(n + 3) {
 			margin-right: 0;
 			margin-bottom: 0;
 		}
@@ -185,8 +204,12 @@ export default {
 				margin-bottom: 22px;
 
 
-				&:nth-child(2) {
+				&:nth-child(n + 3) {
 					margin-bottom: 22px;
+				}
+
+				&:nth-last-child(1) {
+					margin-bottom: 0;
 				}
 			}
 		}

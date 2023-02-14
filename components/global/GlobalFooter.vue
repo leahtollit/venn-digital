@@ -4,13 +4,15 @@
     <!-- contact col -->
       <div class="globalFooter__contact flex flex--dir-c">
         <p class="globalFooter__heading fs--16 fc--white ff--inter fw--900 lh--150">Contact Us</p>
-        <div class="globalFooter__contactRow flex justifyC--between">
-          <p class="globalFooter__subheading fs--14 fc--white ff--inter fw--500 lh--170" >Telephone</p>
-          <a class="globalFooter__contactlink fs--14 fc--white ff--inter fw--900 lh--170" href="tel:01625788125">+44 123 456 7890</a>
-        </div>
-        <div class="globalFooter__contactRow flex justifyC--between">
-          <p class="globalFooter__subheading fs--14 fc--white ff--inter fw--500 lh--170">Email</p>
-          <a class="globalFooter__contactlink fs--14 fc--white ff--inter fw--900 lh--170" href="mailto:mailto:email@example.com" target="_blank">enquires@domain.com</a>
+        <div class="globalFooter__contactInfo flex justifyC--between">
+          <div class="globalFooter__contactRow flex justifyC--between flex--dir-c">
+            <p class="globalFooter__subheading fs--14 fc--white ff--inter fw--500" >Telephone</p>
+            <p class="globalFooter__subheading fs--14 fc--white ff--inter fw--500">Email</p>
+          </div>
+          <div class="globalFooter__contactRow globalFooter__contactRow--info flex justifyC--between flex--dir-c">
+            <a class="globalFooter__contactlink fs--14 fc--white ff--inter fw--900" href="tel:01625788125">+44 123 456 7890</a>
+            <a class="globalFooter__contactlink fs--14 fc--white ff--inter fw--900 " href="mailto:mailto:email@example.com" target="_blank">enquires@domain.com</a>
+          </div>
         </div>
         <div class="globalFooter__connectRow flex flex--dir-c">
           <p class="globalFooter__heading fs--16 fc--white ff--inter fw--900 lh--150">Connect with Us</p>
@@ -211,6 +213,11 @@ export default {
     width: 100%;
   }
 
+  &__contactRow {
+    width: calc(50% - 53px);
+    margin-right: 53px;
+  }
+
   &__connectRow {
     margin-top: 20px;
   }
@@ -233,7 +240,6 @@ export default {
   }
   
   &__contactRow {
-    margin-bottom: 11px;
 
     &:nth-child(3) {
       margin-bottom: 0;

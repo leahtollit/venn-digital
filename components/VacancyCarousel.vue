@@ -32,15 +32,37 @@ export default {
 	
 }
 
- //----------------------------------------//
-// 600
-@include breakpoint(s) {
+//----------------------------------------//
+// 750
+@include breakpoint(m) {
   .vacancyCarousel {
 		padding: 100px 0 153px;
 
 		&__headerHolder {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__headerHolder {
 			margin-bottom: 18.5px;
 		}
+
+		&__header {
+			margin-bottom: 25px;
+		}
+	}
+}
+
+
+//----------------------------------------//
+// 600
+@include breakpoint(s) {
+  .vacancyCarousel {
+
+		&__headerHolder {
+			margin-bottom: 18.5px;
+		}
+
 
 		&__header {
 			font-size: 32px;

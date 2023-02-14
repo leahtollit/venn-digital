@@ -23,7 +23,7 @@
 				</div>
 			</div>
 		</div>
-		<img class="statText__bg pos--abs" src="/images/green-bg-shape-larger.png" alt="">
+		<!-- <img class="statText__bg pos--abs" src="/images/green-bg-shape-larger.png" alt=""> -->
 
   </section>
 </template>
@@ -58,7 +58,9 @@ export default {
 
 <style lang="scss">
 .statText {
-	background: $greenDark;
+	background: url('static/images/statistic-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	padding-top: 117px;
 	padding-bottom: 203px;
 

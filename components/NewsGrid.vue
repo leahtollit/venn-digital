@@ -183,14 +183,31 @@ export default {
 }
 
 //----------------------------------------//
-// 600
-@include breakpoint(s) {
+// 750
+@include breakpoint(m) {
   .newsGrid {
 		padding: 99px 0 0;
 
 		&__headerHolder {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__header {
+			margin-bottom: 25px;
+		}
+
+		&__headerHolder {
 			margin-bottom: 41px;
 		}
+		
+	}
+}
+
+//----------------------------------------//
+// 600
+@include breakpoint(s) {
+  .newsGrid {
 
 		&__header {
 			font-size: 32px;
