@@ -211,6 +211,10 @@ export default {
 					margin-bottom: 22px;
 				}
 
+				&:nth-child(2), &:nth-child(4) {
+					width: 100%;
+				}
+
 				&:nth-last-child(1) {
 					margin-bottom: 0;
 				}

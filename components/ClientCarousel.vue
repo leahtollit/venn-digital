@@ -22,6 +22,7 @@ export default {
 	background-repeat: no-repeat;
 	background-size: cover;	
 	padding: 111px 0 110px;
+	overflow-x: hidden;
 
 	&__headerHolder {
 		margin-bottom: 53px;
