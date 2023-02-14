@@ -341,6 +341,7 @@ export default {
     height: 50px;
     border: 2px solid $white;
     padding: 14px 25px 15px;
+    border-radius: 0;
     z-index: 1;
 
     &::placeholder {
