@@ -25,7 +25,8 @@ export default {
       { hid: 'og:image', property: 'og:image', content: meta.data.socialCard }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swaps' }
+    { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swaps' },
+    { rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap' }
   ]
   },
 

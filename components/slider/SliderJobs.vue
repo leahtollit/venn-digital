@@ -3,24 +3,24 @@
       <div ref="slider" class="sliderJobs__slider keen-slider flex pos--rel">
         <div v-for="(slide, i) in slides" :key="slide + i" class="sliderJobs__slide keen-slider__slide">
         <div class="sliderJobs__roleHeader">
-            <p class="sliderJobs__role fc--white fs--18"> {{ slide.role }}</p>
+            <p class="sliderJobs__role fc--white fs--18 ff--montserrat fw--500 lh--120"> {{ slide.role }}</p>
         </div>
         <div class="sliderJobs__body flex flex--dir-c">
           <div class="sliderJobs__row flex">
             <SalaryIcon class="sliderJobs__icon sliderJobs__icon--salary"/>
-            <p class="sliderJobs__salary fs--14 fc--greyLight "> {{ slide.salary }} </p>
+            <p class="sliderJobs__salary fs--14 fc--greyLight ff--inter fw--700 lh--170"> {{ slide.salary }} </p>
           </div>
           <div class="sliderJobs__row flex">
             <LocationIcon class="sliderJobs__icon sliderJobs__icon--location"/>
-            <p class="sliderJobs__location fs--14 fc--greyLight"> {{ slide.location }} </p>
+            <p class="sliderJobs__location fs--14 fc--greyLight ff--inter fw--700 lh--170"> {{ slide.location }} </p>
           </div>
           <div class="sliderJobs__row flex">
             <ClockIcon class="sliderJobs__icon sliderJobs__icon--clock"/>
-            <p class="sliderJobs__type fs--14 fc--greyLight"> {{ slide.type }} </p>
+            <p class="sliderJobs__type fs--14 fc--greyLight ff--inter fw--700 lh--170"> {{ slide.type }} </p>
           </div>
-            <p class="sliderJobs__description fs--16 fc--greyLight"> {{ slide.description }} </p>
+            <p class="sliderJobs__description fs--16 fc--greyLight ff--inter fw--400 lh--150"> {{ slide.description }} </p>
 						<NuxtLink class="sliderJobs__link flex alignI--center" :to="slide.link">
-							<p class="sliderJobs__linkLabel fc--green"> {{slide.linkLabel}}</p>
+							<p class="sliderJobs__linkLabel fc--green ff--inter fs--16 lh--150 fw--900"> {{slide.linkLabel}}</p>
 							<ArrowIcon class="sliderJobs__arrow"/>
 							</Nuxtlink>
         </div> 

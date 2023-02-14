@@ -2,7 +2,7 @@
   <Section class="clientCarousel pos--rel">
 		<div class="clientCarousel__container container container--medium pos--rel flex justifyC--center flex--dir-c ">
 			<div class="clientCarousel__headerHolder pos--rel flex justifyC--center">
-				<h1 class="clientCarousel__header fc--white fs--40 fw-600">A few of our fantastic clients</h1>
+				<h1 class="clientCarousel__header fc--white ff--montserrat lh--120 fs--40 fw-600">A few of our fantastic clients</h1>
 			</div>
 			<SliderCarousel />
 		</div>

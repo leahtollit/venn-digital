@@ -2,8 +2,8 @@
   <Section class="heroIntro ">
 		<div class="heroIntro__container container container--medium pos--rel flex flex--dir-c alignI--start">
 			<div class="heroIntro__contentHolder pos--rel flex justifyC--start flex--dir-c">
-				<h1 class="heroIntro__header fc--white fs--40">All the answers under one roof</h1>
-				<p class="heroIntro__text fc--white fs--24">IT and Tech Recruitment for everything from start ups to large enterprises</p>
+				<h1 class="heroIntro__header fc--white fs--40 ff--montserrat fw--600 lh--125">All the answers under one roof</h1>
+				<p class="heroIntro__text fc--white fs--24 ff--montserrat fw--400 lh--150">IT and Tech Recruitment for everything from start ups to large enterprises</p>
 			</div>
 			<BaseBtn class="baseBtn--green">Read More </BaseBtn>
 			<div class="heroIntro__nav flex flex--dir-c pos--abs y--center ">

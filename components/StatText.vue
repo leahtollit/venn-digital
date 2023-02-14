@@ -3,8 +3,8 @@
   <Section class="statText pos--rel">
 		<div class="statText__container container container--medium flex justifyC--between">
 			<div class="statText__contentHolder flex z--1">
-				<h2 class="statText__header fs--40 fw--600 fc--white">Who are Venn Digital</h2>
-				<p class="statText__text fc--white fs--24 fw--400">Large Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas in laoreet justo, at maximus nibh. Curabitur laoreet egestas dui vitae aliquet.</p>
+				<h2 class="statText__header fs--40 fw--600 fc--white ff--montserrat lh--125">Who are Venn Digital</h2>
+				<p class="statText__text fc--white fs--24 fw--400 ff--montserrat lh--150">Large Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas in laoreet justo, at maximus nibh. Curabitur laoreet egestas dui vitae aliquet.</p>
 				<BaseBtn class="baseBtn baseBtn--white">Read More</BaseBtn>
 			</div>
 			<div class="statText__holder z--1">
@@ -13,8 +13,8 @@
             <div class="statText__body flex alignI--center justifyC--center">
 
               <div class="statText__copyHolder flex flex--dir-c">
-                <p class="statText__statistic fw--700 fs--60 fc--white pos--rel">{{ el.statistic }}</p>
-                <p class="statText__title fs--12 fw--700 fc--white pos--rel">
+                <p class="statText__statistic fw--700 fs--60 fc--white pos--rel lh--120 ff--montserrat">{{ el.statistic }}</p>
+                <p class="statText__title fs--12 lh--125 fw--700 fc--white ff--montserrat pos--rel">
                   {{ el.text }}
                 </p>
               </div>

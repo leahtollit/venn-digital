@@ -2,7 +2,7 @@
   <Section class="newsGrid">
 		<div class="newsGrid__container container container--medium pos--rel flex">
 			<div class="newsGrid__headerHolder flex justifyC--between alignI--center">
-				<h3 class="newsGrid__header fs--40 fc--black fw--600">Latest News &amp; Articles</h3>
+				<h3 class="newsGrid__header fs--40 fc--black fw--600 ff--montserrat lh--120">Latest News &amp; Articles</h3>
 				<BaseBtn class="baseBtn baseBtn--green" :to="'/'">All News</BaseBtn>
 			</div>
 			<div class="newsGrid__grid grid">
@@ -13,8 +13,8 @@
             </div>
 						<div class="newsGrid__content pos--rel">
 							<div class="newsGrid__copyHolder flex flex--dir-c">
-								<p class="newsGrid__title ff--inter fw--700 fs--22 fc--black pos--rel">{{ el.title }}</p>
-								<p class="newsGrid__text ff--inter fs--16 fc--black pos--rel o--8">
+								<p class="newsGrid__title ff--montserrat lh--120 fw--700 fs--22 fc--black pos--rel">{{ el.title }}</p>
+								<p class="newsGrid__text ff--montserrat fs--16 fc--greyLighter pos--rel lh--120 fw--400">
 									{{ el.text }}
 								</p>
 							</div>

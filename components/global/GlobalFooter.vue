@@ -3,17 +3,17 @@
     <div class="globalFooter__container container container--medium flex justifyC--between">
     <!-- contact col -->
       <div class="globalFooter__contact flex flex--dir-c">
-        <p class="globalFooter__heading fs--16 fc--white ff--inter">Contact Us</p>
+        <p class="globalFooter__heading fs--16 fc--white ff--inter fw--900 lh--150">Contact Us</p>
         <div class="globalFooter__contactRow flex justifyC--between">
-          <p class="globalFooter__subheading fs--14 fc--white ff--inter" >Telephone</p>
-          <a class="globalFooter__contactlink fs--14 fc--white ff--inter" href="tel:01625788125">+44 123 456 7890</a>
+          <p class="globalFooter__subheading fs--14 fc--white ff--inter fw--500 lh--170" >Telephone</p>
+          <a class="globalFooter__contactlink fs--14 fc--white ff--inter fw--900 lh--170" href="tel:01625788125">+44 123 456 7890</a>
         </div>
         <div class="globalFooter__contactRow flex justifyC--between">
-          <p class="globalFooter__subheading fs--14 fc--white ff--inter">Email</p>
-          <a class="globalFooter__contactlink fs--14 fc--white ff--inter" href="mailto:mailto:email@example.com" target="_blank">enquires@domain.com</a>
+          <p class="globalFooter__subheading fs--14 fc--white ff--inter fw--500 lh--170">Email</p>
+          <a class="globalFooter__contactlink fs--14 fc--white ff--inter fw--900 lh--170" href="mailto:mailto:email@example.com" target="_blank">enquires@domain.com</a>
         </div>
         <div class="globalFooter__connectRow flex flex--dir-c">
-          <p class="globalFooter__heading fs--16 fc--white ff--inter">Connect with Us</p>
+          <p class="globalFooter__heading fs--16 fc--white ff--inter fw--900 lh--150">Connect with Us</p>
           <div class="globalFooter__socials flex alignI--center">
             <a
               href="https://www.linkedin.com/company/venn-digital"
@@ -45,66 +45,66 @@
       <!-- quick links -->
       <div class="globalFooter__navHolder flex">
         <div class="globalFooter__nav flex flex--dir-c">
-          <p class="globalFooter__heading fs--16 fc--white ff--inter">Quick Links</p>
+          <p class="globalFooter__heading fs--16 fc--white ff--inter fw--900 lh--150">Quick Links</p>
           <div class="globalFooter__navLinks flex flex--dir-c">
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Home
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">About Us
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Clients
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Candidates
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Media Hub
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Job Search
             </a>
           </div>
         </div>
           <div class="globalFooter__nav flex flex--dir-c">
-          <p class="globalFooter__heading fs--16 fc--white ff--inter">Sectors</p>
+          <p class="globalFooter__heading fs--16 fc--white ff--inter fw--900 lh--150">Sectors</p>
           <div class="globalFooter__navLinks flex flex--dir-c">
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Information Technology
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Energy
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Banking
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Candidates
             </a>
             <a
               href=""
-              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500"
+              class="globalFooter__navLink fs--11 fc--white ff--inter fw--500 lh--170"
               target="_blank">Life Sciences
             </a>
           </div>
@@ -113,10 +113,10 @@
 
       <!-- email col -->
       <div class="globalFooter__emailHolder">
-        <p class="globalFooter__heading fs--16 fc--white ff--inter">Email Newsletter</p>
-        <p class="globalFooter__text fs--11 fc--white ff--inter fw--500">Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In </p>
+        <p class="globalFooter__heading fs--16 fc--white ff--inter fw--900 lh--150">Email Newsletter</p>
+        <p class="globalFooter__text fs--11 fc--white ff--inter fw--400 lh--140">Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In </p>
         <div class="globalFooter__inputHolder flex">
-          <input type="text" id="email" name="email" placeholder="Email Address" class="globalFooter__input fs--16 ff--inter fc--white">
+          <input type="text" id="email" name="email" placeholder="Email Address" class="globalFooter__input fs--16 ff--inter fc--white fw--700 lh--150">
           <button class="globalFooter__submitBtn">
           <IconEmail class="globalFooter__icon globalFooter__icon--email" />
           </button>
@@ -129,20 +129,20 @@
 
     <div class="globalFooter__credits pos--rel">
       <div class="globalFooter__creditsHolder container container--medium pos--rel flex justifyC--between alignI--center">
-      <p class="globalFooter__copyright fs--12 ff--inter fw--500 fc--white">Copyright Venn</p>
+      <p class="globalFooter__copyright fs--12 ff--inter fw--500 fc--white lh--200">Copyright Venn</p>
       <div class="globalFooter__infoList flex">
         <a class="globalFooter__link" href="" target="_blank">
-          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Privacy Policy</p>
+          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white lh--200">Privacy Policy</p>
         </a>
         <a class="globalFooter__link" href="" target="_blank">
-          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Slavery &amp; Human Trafficking Statement</p>
+          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white lh--200">Slavery &amp; Human Trafficking Statement</p>
         </a>
         <a class="globalFooter__link" href="" target="_blank">
-          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white">Terms &amp; Conditions</p>
+          <p class="globalFooter__linkText fs--12 ff--inter fw--500 fc--white lh--200">Terms &amp; Conditions</p>
         </a>
       </div>
       <a class="globalFooter__link" href="https://www.venndigital.co.uk/" target="_blank">
-        <p class="globalFooter__credit fs--12 ff--inter fw--500 fc--white">Site by Venn</p>
+        <p class="globalFooter__credit fs--12 ff--inter fw--500 fc--white lh--200">Site by Venn</p>
       </a>
     </div>
     </div>

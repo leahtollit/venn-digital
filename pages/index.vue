@@ -1,9 +1,9 @@
 <template>
   <main class="theContent">
     <HeroIntro />
+    <StatText id="statistic" />
     <SectorContent id="industry" />
     <TextImageLeft id="public" />
-    <StatText id="statistic" />
     <ClientCarousel id="clients" />
     <VacancyCarousel id="jobs" />
     <TextContent />

@@ -2,7 +2,7 @@
   <Section class="vacancyCarousel pos--rel">
 		<div class="vacancyCarousel__container container container--medium pos--rel flex flex--dir-c alignI--start">
       <div class="vacancyCarousel__headerHolder flex justifyC--between alignI--center">
-				<h3 class="vacancyCarousel__header fs--40 fc--white fw--600">Latest Jobs</h3>
+				<h3 class="vacancyCarousel__header fs--40 fc--white fw--600 ff--montserrat lh--120">Latest Jobs</h3>
 				<BaseBtn class="baseBtn baseBtn--green" link="/">Read More</BaseBtn>
 			</div>
       <SliderJobs class="vacancyCarousel__carousel"/>

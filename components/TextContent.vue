@@ -2,8 +2,8 @@
   <Section class="textContent pos--rel">
 		<div class="textContent__container container container--medium pos--rel flex flex--dir-c alignI--start">
 			<div class="textContent__contentHolder pos--rel flex justifyC--start flex--dir-c">
-				<h1 class="textContent__header fc--white fs--40">Join the crowd and become part of an award winning team</h1>
-				<p class="textContent__text fc--white fs--24">Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas</p>
+				<h1 class="textContent__header fc--white fs--40 ff--montserrat lh--120 fw--600">Join the crowd and become part of an award winning team</h1>
+				<p class="textContent__text fc--white fs--24 ff--montserrat fw--300 lh--150">Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas</p>
 			</div>
 			<BaseBtn class="baseBtn--white">Careers</BaseBtn>
 		</div>

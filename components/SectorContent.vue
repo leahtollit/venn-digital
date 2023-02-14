@@ -2,8 +2,8 @@
 	<Section class="sectorContent pos--rel">
 		<div class="sectorContent__container container container--medium pos--rel flex flex--dir-c alignI--start">
 			<div class="sectorContent__headerHolder flex flex--dir-c alignI--center">
-				<h3 class="sectorContent__header fs--40 fc--greyDarker fw--600">Our Industry Sectors</h3>
-				<p class="sectorContent__text fs--18 fc--greyDark">Large Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas in laoreet justo, at maximus nibh. Curabitur laoreet egestas dui vitae aliquet. </p>
+				<h3 class="sectorContent__header fs--40 fc--greyDarker fw--600 ff--montserrat lh--125">Our Industry Sectors</h3>
+				<p class="sectorContent__text fs--18 fc--greyDark ff--montserrat lh--200">Large Paragragh Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida odio at semper semper. In sagittis felis non pharetra dapibus. Maecenas in laoreet justo, at maximus nibh. Curabitur laoreet egestas dui vitae aliquet. </p>
 			</div>
 			<div class="sectorContent__grid flex justifyC--between">
 				<div v-for="(sector, i) in sectors" :key="sector + i" class="sectorContent__item pos--rel">
@@ -13,9 +13,9 @@
 						</div>
 					</a>
           <div class="sectorContent__overlay">
-						<h3 class="sectorContent__name fc--white fs--24 fw--600">{{ sector.name }}</h3>
+						<h3 class="sectorContent__name fc--white fs--24 fw--600 ff--montserrat lh--120">{{ sector.name }}</h3>
 						<a :href="sector.link" target="_blank" class="sectorContent__link flex alignI--center">
-            	<p class="sectorContent__label fc--green fs--16">{{ sector.linkLabel }}</p>
+            	<p class="sectorContent__label fc--green fs--16 ff--montserrat lh--120">{{ sector.linkLabel }}</p>
 							<ArrowIconSmall class="sectorContent__arrow"/>
 						</a>
           </div>

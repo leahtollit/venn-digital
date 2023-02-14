@@ -2,8 +2,8 @@
   <Section class="centeredCta pos--rel">
 		<div class="centeredCta__container container pos--rel flex flex--dir-c alignI--center">
 			<div class="centeredCta__contentHolder pos--rel flex justifyC--start flex--dir-c z--1">
-				<h1 class="centeredCta__header fc--white fs--24 ta--center">Have a question? We want to hear from you! </h1>
-				<p class="centeredCta__text fc--white fs--24 ta--center">Curabitur laoreet egestas!</p>
+				<h4 class="centeredCta__header fc--white fs--24 ta--center ff--inter lh--150">Have a question? We want to hear from you! </h4>
+				<p class="centeredCta__text fc--white fs--24 ta--center fw--300 ff--inter lh--150">Curabitur laoreet egestas!</p>
 			</div>
 				<BaseBtn class="baseBtn--white z--1" external :link="'mailto:mailto:email@example.com'">Get in Touch</BaseBtn>
 		</div>
@@ -27,10 +27,10 @@ export default {
 
 	&__contentHolder {
 		max-width: 555px;
+		margin-bottom: 18px;
 	}
 
 	&__header, &__text  {
-		margin-bottom: 25px;
 		width: 100%;
 	}
 

@@ -1,6 +1,6 @@
 <template>
   <div v-if="parentLink" :class="'baseBtn--' + type" class="baseBtn pos--rel ta--center buttonReset">
-    <p v-if="!loading" class="baseBtn__label fs--16 ff--inter fw--700"><slot /></p>
+    <p v-if="!loading" class="baseBtn__label lh--150 fs--16 ff--inter fw--700"><slot /></p>
     <div v-else class="baseLoader baseLoader--small" />
   </div>
 
@@ -9,7 +9,7 @@
     :to="link"
     :class="'baseBtn--' + type"
     class="baseBtn pos--rel ta--center buttonReset">
-    <p v-if="!loading" class="baseBtn__label fs--16 ff--inter fw--700"><slot /></p>
+    <p v-if="!loading" class="baseBtn__label lh--150 fs--16 ff--inter fw--700"><slot /></p>
     <div v-else class="baseLoader baseLoader--small" />
   </NuxtLink>
 
@@ -19,12 +19,12 @@
     :class="'baseBtn--' + type"
     class="baseBtn pos--rel ta--center buttonReset"
     target="_blank">
-    <p v-if="!loading" class="baseBtn__label fs--16 ff--inter fw--700"><slot /></p>
+    <p v-if="!loading" class="baseBtn__label lh--150 fs--16 ff--inter fw--700"><slot /></p>
     <div v-else class="baseLoader baseLoader--small" />
   </a>
 
   <button v-else :class="'baseBtn--' + type" class="baseBtn pos--rel ta--center buttonReset">
-    <p v-if="!loading" class="baseBtn__label fs--16 ff--inter fw--700"><slot /></p>
+    <p v-if="!loading" class="baseBtn__label lh--150 fs--16 ff--inter fw--700"><slot /></p>
     <div v-else class="baseLoader baseLoader--small" />
   </button>
 </template>
