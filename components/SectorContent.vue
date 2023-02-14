@@ -160,8 +160,12 @@ export default {
 		margin-bottom: 44px;
 
 		&:nth-child(n + 3) {
-			margin-right: 0;
 			margin-bottom: 0;
+		}
+
+		&:nth-child(2), &:nth-child(4) {
+			margin-right: 0;
+			width: 50%;
 		}
 
 		&:hover {
@@ -190,7 +194,6 @@ export default {
 
 			&__text {
 				font-size: 16px;
-				// line-height: 16px;
 			}
 
 			&__name {

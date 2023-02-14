@@ -114,8 +114,8 @@ export default {
 }
 
   //----------------------------------------//
-// 600
-@include breakpoint(s) {
+// 750
+@include breakpoint(m) {
   .textImageLeft {
 		padding: 0 0 53px;
 

@@ -10,8 +10,8 @@
             <p class="globalFooter__subheading fs--14 fc--white ff--inter fw--500">Email</p>
           </div>
           <div class="globalFooter__contactRow globalFooter__contactRow--info flex justifyC--between flex--dir-c">
-            <a class="globalFooter__contactlink fs--14 fc--white ff--inter fw--900" href="tel:01625788125">+44 123 456 7890</a>
-            <a class="globalFooter__contactlink fs--14 fc--white ff--inter fw--900 " href="mailto:mailto:email@example.com" target="_blank">enquires@domain.com</a>
+            <a class="globalFooter__contactLink fs--14 fc--white ff--inter fw--900" href="tel:01625788125">+44 123 456 7890</a>
+            <a class="globalFooter__contactLink fs--14 fc--white ff--inter fw--900 " href="mailto:mailto:email@example.com" target="_blank">enquires@domain.com</a>
           </div>
         </div>
         <div class="globalFooter__connectRow flex flex--dir-c">
@@ -345,6 +345,7 @@ export default {
 
     &::placeholder {
       opacity: 1;
+      color: $white;
     }
   }
 }
