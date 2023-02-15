@@ -92,7 +92,7 @@
 							perView: 10
           	}
 					},
-					'(max-width: 1400px)': {
+					'(max-width: 1600px)': {
           	slides: {
 							spacing: 20,
 							perView: 6
