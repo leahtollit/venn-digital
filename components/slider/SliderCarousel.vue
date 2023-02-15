@@ -137,6 +137,7 @@
   <style lang="scss">
   .sliderCarousel {
 		width: 300%;
+		margin-left: -70%;
 		overflow: visible;
     //
 		&__slider {
@@ -196,6 +197,7 @@
 @include breakpoint(sssl) {
   .sliderCarousel {
 		width: 200%;
+		margin-left: 0;
 	}
 }
 
