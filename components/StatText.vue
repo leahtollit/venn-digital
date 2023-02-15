@@ -174,7 +174,7 @@ export default {
 		}
 
 		&__contentHolder {
-			margin-bottom: 28px;
+			margin-bottom: 50px;
 		}
 
 		&__contentHolder, &__holder {

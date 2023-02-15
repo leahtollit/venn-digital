@@ -1,6 +1,6 @@
 <template>
   <Section class="heroIntro ">
-		<div class="heroIntro__container container container--medium pos--rel flex flex--dir-c alignI--start z--1">
+		<div class="heroIntro__container container container--medium pos--rel flex flex--dir-c alignI--start justifyC--center z--1">
 		
 			<div class="heroIntro__contentHolder pos--rel flex justifyC--start flex--dir-c z--2">
 				<h1 class="heroIntro__header fc--white fs--40 ff--montserrat fw--600 lh--125">All the answers under one roof</h1>
@@ -77,9 +77,6 @@ export default {
 .heroIntro {
 	width: 100%;
 	height: 100vh;
-	// background: url('static/images/hero-image.jpg');
-	// background-repeat: no-repeat;
-	// background-size: cover;
 
 	&__imageHolder {
 		width: 100vw;
@@ -103,8 +100,10 @@ export default {
 
 	&__container {
 		padding-top: 288px;
+		padding-bottom: 131px;
 		height: 100%;
 	}
+
 
 	&__header {
 		max-width: 634px;
@@ -145,6 +144,16 @@ export default {
 		}
 	}
 	
+}
+
+// This media query targets screens shorter than 810px but wider than 750px to make things taller/reduce margins
+@media screen and (min-width: 750px) and (max-width: 1920px) and (max-height: 810px) {
+	.heroIntro {
+		&__container {
+      padding-top: 144px;
+		padding-bottom: 0;
+		}
+	}
 }
 
 //----------------------------------------//
