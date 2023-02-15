@@ -82,10 +82,16 @@
         },
 				slides: {
           spacing: 20,
-					perView: 6
+					perView: 15
         },
         loop: true,
 				breakpoints: {
+					'(max-width: 1920px)': {
+          	slides: {
+							spacing: 20,
+							perView: 10
+          	}
+					},
 					'(max-width: 1400px)': {
           	slides: {
 							spacing: 20,
@@ -130,7 +136,7 @@
   
   <style lang="scss">
   .sliderCarousel {
-		width: 122%;
+		width: 300%;
 		overflow: visible;
     //
 		&__slider {
@@ -184,6 +190,14 @@
 		}
   
   }
+
+//----------------------------------------//
+// 1920
+@include breakpoint(sssl) {
+  .sliderCarousel {
+		width: 200%;
+	}
+}
 
 	//----------------------------------------//
 // 1400
