@@ -183,24 +183,10 @@ export default {
   }
 
   &__contactLink {
-    position: relative;
-
-      &::after {
-      position: absolute;
-      content: "";
-      background: $white;
-      width: 100%;
-      height: 1px;
-      bottom: -0.1875rem;
-      left: 0;
-      transform: scaleX(0);
-      transition: transform .7s cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+    transition: transform 0.3s ease;
 
     &:hover {
-      &::after {
-        transform: scaleX(1);
-      }
+      transform: translateY(-2px);
     }
   }
 
