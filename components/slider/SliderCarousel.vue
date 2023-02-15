@@ -130,7 +130,7 @@
   
   <style lang="scss">
   .sliderCarousel {
-		width: 100%;
+		width: 122%;
 		overflow: visible;
     //
 		&__slider {
@@ -182,8 +182,16 @@
 			height: 100%;
 			object-fit: contain;
 		}
-    
   
   }
+
+	//----------------------------------------//
+// 1400
+@include breakpoint(sl) {
+  .sliderCarousel {
+		width: 100%;
+	}
+}
   </style>
+
   
